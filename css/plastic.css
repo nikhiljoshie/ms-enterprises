@@ -1,0 +1,71 @@
+.logo_section {
+    background: url("../Images/containers.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo_section {
+    padding-top: 100px;
+    padding-bottom: 325px;
+    width: 100%;
+    float: left;
+}
+
+h1.fashion_taital {
+    color: #04A858;
+}
+
+.products .categories {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the parent */
+    left: 0;
+    background-color: #000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 200px; /* Set a minimum width for better visibility */
+}
+
+.products:hover .categories {
+    display: block;
+}
+
+.box_main {
+    width: 100%;
+    background-color: #ffffff;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 0 30px 10px #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.box_main a {
+    color: #04A858;
+}
+
+.box_main a:hover {
+    color: #3D3F98;
+}
+
+div.tshirt_img img {
+    /* height: 510px; */
+    height: 250px;
+    width: 250px;
+}
+
+div.box_main {
+    height: 425px;
+}
+
+@media screen and (max-width: 1080px) {
+    .logo_section {
+        margin-bottom: 25px;
+        background-size: cover;
+        width: 100%;
+        padding-bottom: 100px;
+    }
+
+    h1.fashion_taital img {
+        padding-top: 10px;
+    }
+}

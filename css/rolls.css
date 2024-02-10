@@ -1,0 +1,30 @@
+.logo_section {
+    background: url("../Images/bubbles.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo_section {
+    padding-top: 100px;
+    padding-bottom: 325px;
+    width: 100%;
+    float: left;
+}
+
+div.tshirt_img img {
+    height: 250px;
+    width: 250px;
+}
+
+div.box_main {
+    height: 425px;
+}
+
+@media screen and (max-width: 1080px) {
+    .logo_section {
+        margin-bottom: 25px;
+        width: 100%;
+        background-size: cover;
+        padding-bottom: 50px;
+    }
+}

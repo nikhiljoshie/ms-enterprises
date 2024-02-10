@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="Images/mse.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/campus.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="Images/fevicon.png" type="image/gif" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesoeet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="header_section_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <div class="custom_menu">
+                        <ul class="nav-left">
+                            <li><a href="index.html"><img src="Images/mse.png" alt="M.S. Enterprises"></a></li>
+                        </ul>
+                        <ul class="nav-right" id="dropdownClick">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li class="products">
+                                <a href="products.html">Products</a>
+                                <div class="categories">
+                                    <a href="garbage.html">Garbage Bags</a>
+                                    <a href="plastic.html">Plastic Containers</a>
+                                    <a href="gloves.html">Nitrile Hand Gloves</a>
+                                    <a href="tapes.html">Packing Tapes</a>
+                                    <a href="stationary.html">Stationary Items</a>
+                                    <a href="bottles.html">Milk Shake Bottles</a>
+                                    <a href="rolls.html">Bubble Rolls</a>
+                                    <a href="cutlery.html">Wooden Cutlery</a>
+                                </div>
+                            </li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="logo_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="campus">
+        <div class="container">
+            <a href="campus.html"><h1><img src="Images/campus.png" alt="Campus" width="50px" height="50px"> Campus</h1></a>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <figure>
+                        <img id="image" src="Images/company.jpeg" alt="Company" width="300px" height="300px" onclick="openModal(0)">
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <figure>
+                        <img id="second-image" src="Images/photo.jpg" alt="Company" width="300px" height="300px" onclick="openModal(1)">
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <figure>
+                        <img id="third-image" src="Images/building.jpg" alt="Company" width="300px" height="300px" onclick="openModal(2)">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <figure>
+            <img class="img" id="img01" src="Images/company.jpeg" alt="Company" class="modal-content">
+            <figcaption id="caption">Campus</figcaption>
+            <a class="prev" onclick="prevImage()">&#10094;</a>
+            <a class="next" onclick="nextImage()">&#10095;</a>
+        </figure>
+    </div>
+    <div id="mySecondModal" class="modal">
+        <span class="close" onclick="document.getElementById('mySecondModal').style.display='none'">&times;</span>
+        <figure>
+            <img class="img" id="img02" src="Images/photo.jpg" alt="Company" class="modal-content">
+            <figcaption id="second-caption">Campus</figcaption>
+            <a class="prev" onclick="prevImage()">&#10094;</a>
+            <a class="next" onclick="nextImage()">&#10095;</a>
+        </figure>
+    </div>
+    <div id="myThirdModal" class="modal">
+        <span class="close" onclick="document.getElementById('myThirdModal').style.display='none'">&times;</span>
+        <figure>
+            <img class="img" id="img03" src="Images/building.jpg" alt="Company" class="modal-content">
+            <figcaption id="third-caption">Campus</figcaption>
+            <a class="prev" onclick="prevImage()">&#10094;</a>
+            <a class="next" onclick="nextImage()">&#10095;</a>
+        </figure>
+    </div>
+    <div class="footer_section layout_padding">
+        <div class="container">
+            <div class="footer_logo">
+                <a href="index.html"><img src="Images/mse.png"></a>
+            </div>
+            <br>
+            <div class="footer_menu">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                        <h3>Quick Links</h3>
+                        <ul class="links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <h3>Policies</h3>
+                        <ul class="policies">
+                            <li><a href="Privacy/884d6b15-6504-4c35-b2cd-e296a8f6801a.pdf">Privacy Policy</a></li>
+                            <li><a href="Terms/65fc2a8e-140f-4864-839d-c3a41164342d.pdf">Terms & Conditions</a></li>
+                            <li><a href="Disclaimer/f0199b6e-0b90-49e5-9224-918f9ab5d60d.pdf">Disclaimer</a></li>
+                            <li><a href="Return/6caad1f4-b98e-443f-bef5-a96fbf63ff42.pdf">Return Policy</a></li>
+                            <li><a href="Cookies/99a0087f-a37d-4dd0-b067-e8103e5f1b7f.pdf">Cookies Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <h3>Social Media Links</h3>
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/"><img src="Images/facebook.png" alt="Facebook"></a></li>
+                            <li><a href="https://www.instagram.com/"><img src="Images/instagram.png" alt="Instagram"></a></li>
+                            <li><a href="https://twitter.com/"><img src="Images/twitter.png" alt="Twitter"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright_section">
+           <div class="container">
+              <p class="copyright_text">Copyright © 2023 All Rights Reserved. Developed by <a href="index.html">M.S. Enterprises</a></p>
+           </div>
+        </div>
+    </div>
+    <script src="JavaScript/script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "nav-right") {
+                    x.className += " responsive";
+                    /* Change nav-right to nav-right.responsive */
+                } else {
+                    x.className = "nav-right";
+                }
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdownIcon = document.querySelector('.dropdownIcon');
+            const mobileMenu = document.querySelector('.mobile-menu');
+
+            dropdownIcon.addEventListener('click', function() {
+                mobileMenu.classList.toggle('show-dropdown');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#carouselExampleCaptions').carousel();
+        });
+    </script>
+    <script>
+        var modal = document.getElementById('myModal');
+        var img = document.getElementById('image');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+
+        var secondModal = document.getElementById('mySecondModal');
+        var secondImg = document.getElementById('second-image');
+        var secondModalImg = document.getElementById("img02");
+        var secondCaptionText = document.getElementById("second-caption");
+        secondImg.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+
+        var thirdModal = document.getElementById('myThirdModal');
+        var thirdImg = document.getElementById('third-image');
+        var thirdModalImg = document.getElementById("img03");
+        var thirdCaptionText = document.getElementById("third-caption");
+        thirdImg.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+    <script>
+        var currentImageIndex = 0;
+        var images = [
+            { src: "Images/company.jpeg", alt: "Company" },
+            { src: "Images/photo.jpg", alt: "Company" },
+            { src: "Images/building.jpg", alt: "Company" }
+            // Add more image objects here for all your images
+        ];
+
+        function openModal(index) {
+            currentImageIndex = index;
+            var modal = document.getElementById('myModal');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+
+            modal.style.display = "block";
+            modalImg.src = images[index].src;
+            modalImg.alt = images[index].alt;
+            captionText.innerHTML = images[index].alt;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = "none";
+        }
+
+        function prevImage() {
+            currentImageIndex--;
+            if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            }
+            openModal(currentImageIndex);
+        }
+
+        function nextImage() {
+            currentImageIndex++;
+            if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            }
+            openModal(currentImageIndex);
+        }
+
+        // For the first modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // For the second modal
+        window.onclick = function(event) {
+            if (event.target == secondModal) {
+                secondModal.style.display = "none";
+            }
+        }
+
+        // For the third modal
+        window.onclick = function(event) {
+            if (event.target == thirdModal) {
+                thirdModal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+/* body {
+    background: none;
+}
+
+div.about-us {
+    background: url("../Images/about.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+} */
+
+.logo_section {
+    background-image: url("../Images/team.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+.logo_section {
+    padding-top: 100px;
+    padding-bottom: 260px;
+}
+
+.logo_section h1, h2 {
+    color: #000;
+}
+
+.products .categories {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the parent */
+    left: 0;
+    background-color: #000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 200px; /* Set a minimum width for better visibility */
+}
+
+.products:hover .categories {
+    display: block;
+}
+
+div.about-us p {
+    width: 75%;
+    display: block;
+    margin: auto;
+    text-align: justify;
+    padding: 15px;
+    font-size: medium;
+}
+
+div.about-us ol li {
+    width: 75%;
+    margin-left: 15%;
+    padding: 10px;
+    list-style-type: decimal;
+}
+
+div.about-us h1 {
+    color: #04A858;
+    padding: 20px;
+}
+
+div.about-us h2 {
+    padding: 20px;
+    color: #3D3F98;
+}
+
+div.about-us div.col-lg-6 {
+    animation: about 2s ease-in;
+    animation: offer 2s ease-in;
+}
+
+div.about-us div.col-sm-12 {
+    animation: about 2s ease-in;
+    animation: offer 2s ease-in;
+}
+
+@keyframes about {
+    0% {
+        transform: skewX(53deg) translateX(-500px);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(0px);
+    }
+    
+    62% {
+        transform: skewX(0deg) translateX(30px);
+    }
+    
+    70% {
+        transform: skew(-20deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: skew(0deg) translate(0);
+    }
+
+    90% {
+        transform: skew(-5deg);
+    }
+
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+@keyframes offer {
+    0% {
+        transform: skewX(53deg) translateX(-500px);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(0px);
+    }
+    
+    62% {
+        transform: skewX(0deg) translateX(30px);
+    }
+    
+    70% {
+        transform: skew(-20deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: skew(0deg) translate(0);
+    }
+
+    90% {
+        transform: skew(-5deg);
+    }
+
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+div.about-us div.row {
+    width: 75%;
+    margin: auto;
+}
+
+div.row .about-us {
+    background-color: rgba(256, 256, 256, 0.5);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+div.row .story {
+    background-color: rgba(256, 256, 256, 0.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+div.row .commitment {
+    background-color: rgba(256, 256, 256, 0.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+div.row .offer {
+    background-color: rgba(256, 256, 256, 0.5);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+div.row .choice {
+    margin-top: 25px;
+    background-color: rgba(256, 256, 256, 0.5);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+div.row .last {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgba(256, 256, 256, 0.25);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 1080px) {
+    div.about-us h1 {
+        padding: 0px;
+        font-size: 35px;
+    }
+
+    div.about-us h2 {
+        padding: 0px;
+        font-size: 20px;
+    }
+
+    div.about-us p {
+        text-align: center;
+    }
+
+    div.col-sm-12 {
+        padding-top: 20px;
+    }
+
+    div.row div.offer {
+        background-color: rgba(256, 256, 256, 0.1);
+    }
+    
+    div.row div.commitment {
+        background-color: rgba(256, 256, 256, 0.5);
+    }
+    
+    div.row div.story {
+        padding-top: 20px;
+    }
+
+    .logo_section {
+        width: 100%;
+        background-size: cover;
+        padding-bottom: 50px;
+    }
+    
+}

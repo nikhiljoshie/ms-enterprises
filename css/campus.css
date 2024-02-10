@@ -1,0 +1,277 @@
+/* .logo_section {
+    background-image: url("../Images/company.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    margin-top: 0 !important;
+}
+
+.logo_section {
+    padding-top: 100px;
+    padding-bottom: 350px;
+} */
+
+figure img {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.img {
+    width: 500px;
+    height: 350px;
+    display: block;
+    margin: auto;
+}
+
+#image {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#image:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#second-image {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#second-image:hover {
+    opacity: 0.7;
+}
+
+#second-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #second-caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#third-image {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#third-image:hover {
+    opacity: 0.7;
+}
+
+#third-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #third-caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-animation: scale(0);}
+    to {-webkit-animation: scale(1);}
+}
+
+@keyframes zoom {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.modal {
+    text-align: center;
+}
+
+a.previous, a.next {
+    color: #fff;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* CSS for hiding and showing the full-size image */
+.full-image {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.full-image img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.prev, .next {
+    cursor: pointer;
+}
+
+a.prev {
+    color: #fff;
+}
+
+a.prev:hover {
+    color: blue; /* Change the color to blue on hover */
+}
+
+/* @media screen and(max-width: 1080px) {
+    .modal-content {
+        width: 100%;
+    }
+    
+    .logo_section {
+        width: 100%;
+        background-size: cover;
+    }
+} */
+
+.logo_section {
+    background-image: url("../Images/building.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    margin-top: 0 !important;
+    padding-top: 100px;
+    padding-bottom: 350px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo_section {
+        padding-top: 50px; /* Adjust the padding for smaller screens */
+        padding-bottom: 150px; /* Adjust the padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo_section {
+        padding-top: 30px; /* Further adjust the padding for even smaller screens */
+        padding-bottom: 100px; /* Further adjust the padding for even smaller screens */
+    }
+}
+
+/* @media screen and (max-width: 420px) {
+    .col-sm-12 {
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .col-sm-12 {
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .col-sm-12 {
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .col-sm-12 {
+        left: 7.5%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .col-sm-12 {
+        left: 5%;
+    }
+} */
+
+@media screen and (max-width: 1300px) {
+    .col-sm-12 {
+        text-align: center;
+    }
+}

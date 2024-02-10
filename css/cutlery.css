@@ -1,0 +1,45 @@
+.logo_section {
+    background: url("../Images/wc.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo_section {
+    padding-top: 100px;
+    padding-bottom: 325px;
+    width: 100%;
+    float: left;
+}
+
+.products .categories {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the parent */
+    left: 0;
+    background-color: #000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 200px; /* Set a minimum width for better visibility */
+}
+
+.products:hover .categories {
+    display: block;
+}
+
+div.tshirt_img img {
+    height: 250px;
+    width: 250px;
+}
+
+div.box_main {
+    height: 425px;
+}
+
+@media screen and (max-width: 1080px) {
+    .logo_section {
+        margin-bottom: 25px;
+        width: 100%;
+        background-size: cover;
+        padding-bottom: 50px;
+    }
+}

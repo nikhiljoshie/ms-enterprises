@@ -1,0 +1,38 @@
+.logo_section {
+    background: url("../Images/nitrile.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo_section {
+    padding-top: 100px;
+    padding-bottom: 325px;
+    width: 100%;
+    float: left;
+}
+
+h1.fashion_taital {
+    color: #04A858;
+}
+
+div.tshirt_img img {
+    height: 250px;
+    width: 250px;
+}
+
+div.box_main {
+    height: 400px;
+}
+
+@media screen and (max-width: 1080px) {
+    .logo_section {
+        margin-bottom: 25px;
+        width: 100%;
+        background-size: cover;
+        padding-bottom: 50px;
+    }
+
+    h1.fashion_taital {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,207 @@
+/* .logo_section {
+    background-image: url("../Images/company.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.logo_section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+div.col-lg-6 {
+    transition: all 1.4s ease-in-out 2s;
+}
+
+div.about-us, div.offer {
+    animation: about 2s ease-in;
+    animation: offer 2s ease-in;
+}
+
+div.about-us h2, div.offer h2 {
+    color: #04A858;
+}
+
+@keyframes about {
+    0% {
+        transform: skewX(53deg) translateX(-500px);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(0px);
+    }
+    
+    62% {
+        transform: skewX(0deg) translateX(30px);
+    }
+    
+    70% {
+        transform: skew(-20deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: skew(0deg) translate(0);
+    }
+
+    90% {
+        transform: skew(-5deg);
+    }
+
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+@keyframes offer {
+    0% {
+        transform: skewX(53deg) translateX(-500px);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(0px);
+    }
+    
+    62% {
+        transform: skewX(0deg) translateX(30px);
+    }
+    
+    70% {
+        transform: skew(-20deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: skew(0deg) translate(0);
+    }
+
+    90% {
+        transform: skew(-5deg);
+    }
+
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+div.logo_section {
+    margin-top: 50px;
+}
+
+div.about div.col-lg-6 p {
+    color: #000;
+    text-align: justify;
+}
+
+div.fashion_section div.container h1.fashion_taital img a {
+    color: #04A858;
+}
+
+div.row {
+    margin-top: 7.5px;
+}
+
+div.row .about-us {
+    background-color: rgba(256, 256, 256, 0.5);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+div.row .offer {
+    background-color: rgba(256, 256, 256, 0.25);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1.product {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+    div.logo_section {
+        margin: 0;
+    }
+    div.offer {
+        margin-top: 20px;
+    }
+
+    h1.product {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    div.box_main {
+        height: 325px;
+    }
+
+    .surface {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    div.box_main {
+        height: 325px;
+    }
+
+    .surface {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    div.box_main {
+        height: 600px;
+    }
+
+    .surface {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    div.box_main {
+        height: 350px;
+    }
+
+    .surface {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    div.box_main {
+        height: 450px;
+    }
+
+    .surface {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    div.box_main {
+        height: 350px;
+    }
+
+    .surface {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    div.box_main {
+        height: 450px;
+    }
+
+    .surface {
+        width: 300px;
+        height: 300px;
+    }
+}

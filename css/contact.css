@@ -1,0 +1,140 @@
+.logo_section {
+    background: url("../Images/phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo_section {
+    padding-top: 100px;
+    padding-bottom: 225px;
+    width: 100%;
+    float: left;
+}
+
+.products .categories {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the parent */
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 200px; /* Set a minimum width for better visibility */
+}
+
+.products:hover .categories {
+    display: block;
+}
+
+div.contact h1 {
+    color: #04A858;
+    padding: 25px;
+}
+
+div.contact p {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+form input[type="tel"] {
+    padding: 10px;
+    width: 25%;
+}
+
+form input, textarea {
+    border: 1px solid #000;
+    border-radius: 10px;
+    color: #04A858;
+    vertical-align: middle;
+}
+
+form input.submit {
+    margin-bottom: 25px;
+    background-color: #000;
+}
+
+form input.submit {
+    color: #04A858;
+}
+
+form input.submit:hover, input.reset:hover {
+    color: #3D3F98;
+    background-color: #000;
+}
+
+form select {
+    padding: 10px;
+    border-radius: 10px;
+    width: 25%;
+}
+
+div.map div.row div.col-lg-12 iframe {
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+
+div.map div.details {
+    color: #000;
+    text-align: center;
+}
+
+@media screen and (max-width: 1080px) {
+    .logo_section {
+        margin-bottom: 25px;
+        width: 100%;
+        background-size: cover;
+        padding-bottom: 50px;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+
+    h1.fashion_taital img {
+        padding-top: 10px;
+    }
+
+    .contact input[type="text"], .contact input[type="email"], .contact input[type="tel"], .contact textarea {
+        width: 75%;
+    }
+
+    form select {
+        width: 75%;
+    }
+
+    div.map {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .logo_section {
+        margin-bottom: 25px;
+        width: 100%;
+        background-size: cover;
+        padding-bottom: 210px;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+
+    h1.fashion_taital img {
+        padding-top: 10px;
+    }
+
+    .contact input[type="text"], .contact input[type="email"], .contact input[type="tel"], .contact textarea {
+        width: 75%;
+    }
+
+    form select {
+        width: 75%;
+    }
+
+    div.map {
+        width: 100%;
+    }
+}

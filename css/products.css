@@ -1,0 +1,78 @@
+.logo_section {
+    background: url("../Images/products.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+
+.logo_section {
+    padding-top: 100px;
+    padding-bottom: 350px;
+    width: 100%;
+    float: left;
+}
+
+.products .categories {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the parent */
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 200px; /* Set a minimum width for better visibility */
+}
+
+div.tshirt_img img {
+    /* height: 510px; */
+    height: 250px;
+    width: 250px;
+}
+
+div.box_main {
+    height: 425px;
+}
+
+@media screen and (max-width: 1080px) {
+    h1  {
+        font-size: 35px;
+    }
+
+    div.box-main {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo_section {
+        width: 100%;
+        background-size: cover;
+        padding-bottom: 50px;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1  {
+        font-size: 35px;
+    }
+
+    div.box-main {
+        width: 100%;
+    }
+
+    .logo_section {
+        width: 100%;
+        background-size: cover;
+        padding-bottom: 50px;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
